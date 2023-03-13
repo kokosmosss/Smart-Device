@@ -1,0 +1,38 @@
+.menu {
+  h3 {
+    font-family: $roboto-condensed;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+
+.menu__link {
+  color: $color-default-white;
+  line-height: 22px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.menu__address {
+  font-style: normal;
+  line-height: 22px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.menu__tel {
+  color: $color-default-white;
+  line-height: 22px;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

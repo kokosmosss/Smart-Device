@@ -1,0 +1,32 @@
+.intro {
+  background-color: $color-black-pearl;
+
+  h1 {
+    font-family: $roboto-condensed;
+    font-size: 80px;
+    font-weight: 700;
+    color: $color-alice-blue;
+    line-height: 93.75px;
+
+    @include vp-1023 {
+      font-size: 64px;
+      line-height: 75px;
+    }
+
+    @include vp-767 {
+      font-size: 36px;
+      line-height: 42.19px;
+    }
+  }
+
+  p {
+    font-size: 22px;
+    color: $color-alice-blue;
+    line-height: 34.1px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 21.7px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.features__item {
+  h3 {
+    font-family: $roboto-condensed;
+    font-size: 24px;
+    font-weight: 400;
+    color: $color-deep-sky-blue;
+    line-height: 33.6px;
+
+    @include vp-1023 {
+      line-height: 140px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    color: $color-default-black;
+    line-height: 21.6px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18.9px;
+    }
+  }
+}
