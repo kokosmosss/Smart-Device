@@ -1,5 +1,18 @@
 .card {
+  position: relative;
+  min-height: 650px;
+  z-index: 0;
+
+  @include vp-1023 {
+    min-height: 250px;
+  }
+
   h3 {
+    position: relative;
+    z-index: 1;
+    max-width: 170px;
+    margin: 0;
+
     font-family: $roboto-condensed;
     font-size: 20px;
     font-weight: 400;
@@ -9,5 +22,28 @@
     @include vp-767 {
       font-size: 18px;
     }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.card__link {
+  display: block;
+  padding: 50px 40px;
+  height: 100%;
+
+  @include vp-1023 {
+    padding: 40px 45px;
+  }
+
+  @include vp-767 {
+    padding: 30px;
   }
 }
