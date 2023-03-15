@@ -1,13 +1,39 @@
 .menu {
   h3 {
+    margin: 5px 0 20px;
+
     font-family: $roboto-condensed;
     font-size: 15px;
     font-weight: 400;
     line-height: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.menu__list {
+  column-count: 2;
+  gap: 30px;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 25px;
+    display: list-item;
+
+    @include vp-1023 {
+      display: none;
+    }
+  }
+
+  @include vp-1023 {
+    column-count: 1;
   }
 }
 
 .menu__link {
+  display: block;
+  margin-bottom: 10px;
+
   color: $color-default-white;
   line-height: 22px;
 
@@ -18,6 +44,9 @@
 }
 
 .menu__address {
+  display: block;
+  margin-bottom: 10px;
+
   font-style: normal;
   line-height: 22px;
 
@@ -28,6 +57,9 @@
 }
 
 .menu__tel {
+  display: block;
+  margin-bottom: 10px;
+
   color: $color-default-white;
   line-height: 22px;
 

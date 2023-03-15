@@ -1,0 +1,10 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social__link {
+  display: block;
+  padding: 10px;
+}
