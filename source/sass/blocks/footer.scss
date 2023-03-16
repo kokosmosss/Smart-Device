@@ -5,7 +5,7 @@
 
 .footer__container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 300px auto auto;
   column-gap: 30px;
   width: 100%;
 
@@ -14,6 +14,7 @@
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0 50px;
   }
 
   @include vp-767 {
@@ -38,7 +39,7 @@
 .footer__social {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  margin: 85px 0 0 10px;
+  margin: 78px 0 0 5px;
 
   @include vp-1023 {
     grid-column: 2 / 3;

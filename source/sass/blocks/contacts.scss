@@ -1,7 +1,7 @@
 .contacts__link {
   display: grid;
   grid-template-columns: 15px auto;
-  column-gap: 15px;
+  column-gap: 21px;
   align-items: center;
   color: $color-default-white;
 
@@ -15,6 +15,10 @@
     }
   }
 
+  @include vp-767 {
+    padding: 5px 10px 10px;
+  }
+
   svg {
     color: $color-deep-sky-blue;
   }
@@ -24,7 +28,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 480px;
+  min-width: 455px;
 
   @include vp-1023 {
     // max-width: 100px;

@@ -6,6 +6,7 @@
   background-image: linear-gradient(180deg, $color-black-pearl 84.9%, rgba(4, 24, 39, 0) 100%);
 
   @include vp-1023 {
+    position: static;
     padding: 20px 0 25px;
   }
 
@@ -16,10 +17,13 @@
 
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 1220px;
   margin: 0 auto;
+
+  @include vp-1023 {
+    align-items: start;
+  }
 }
 
 .header__button {
@@ -34,10 +38,29 @@
 }
 
 .header__logo {
+  margin-right: 160px;
+
+  @include vp-767 {
+    margin-right: 0;
+  }
+
   img {
     @include vp-767 {
       width: 35px;
       height: 35px;
     }
+  }
+}
+
+
+.header__contacts {
+  margin: 0 170px 0 0;
+
+  @include vp-1023 {
+    margin: 0 0 0 175px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 0 125px;
   }
 }

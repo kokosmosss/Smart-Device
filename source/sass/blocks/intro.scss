@@ -4,44 +4,58 @@
 
   background-color: $color-black-pearl;
 
-  @include vp-1023 {
-    min-height: 640px;
-  }
-
-  @include vp-767 {
-    min-height: 560px;
-  }
-
   h1 {
-    margin: 0 0 40px;
+    margin: 0 0 34px;
 
     font-family: $roboto-condensed;
     font-size: 80px;
     font-weight: 700;
     color: $color-alice-blue;
-    line-height: 93.75px;
+    line-height: 94px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
 
     @include vp-1023 {
+      margin: 0;
+
       font-size: 64px;
       line-height: 75px;
     }
 
     @include vp-767 {
+      margin: 0 0 6px;
+
       font-size: 36px;
-      line-height: 42.19px;
+      line-height: 43px;
     }
   }
 
   p {
-    margin: 0 0 40px;
+    margin: 0 0 48px;
 
     font-size: 22px;
     color: $color-alice-blue;
-    line-height: 34.1px;
+    line-height: 35px;
+
+    @include vp-1023 {
+      margin: 0 0 59px;
+    }
 
     @include vp-767 {
+      margin: 0 0 43px;
+
       font-size: 14px;
-      line-height: 21.7px;
+      line-height: 22px;
+    }
+  }
+
+  img {
+    @include vp-1023 {
+      margin-top: -100px;
+    }
+
+    @include vp-767 {
+      margin-top: -70px;
     }
   }
 }
@@ -80,20 +94,26 @@
 
   background-color: $color-deep-sky-blue;
 
+  @include vp-1023 {
+    margin-left: 45px;
+  }
+
   @include vp-767 {
-    padding: 10px 30px;
+    width: 100%;
+    margin-left: 0;
+    padding: 12px 30px;
     font-size: 14px;
     line-height: 16px;
   }
 
   span {
     &:last-child {
-        display: none;
+      display: none;
 
-        @include vp-767 {
-          display: block;
-        }
+      @include vp-767 {
+        display: block;
       }
+    }
 
     &:first-child {
       @include vp-767 {

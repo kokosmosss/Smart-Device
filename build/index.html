@@ -62,7 +62,7 @@
           <div class="intro__context">
             <h1>Печатные платы</h1>
             <p>
-              производство и монтаж, поставка комплектующих, блоков и модулей
+              производство и монтаж, поставка комплектующих, блоков&nbsp;и&nbsp;модулей
             </p>
             <a class="intro__button button" href="#callback">
               <span>Получить бесплатную консультацию</span>
@@ -112,7 +112,7 @@
               </svg>
               <h3>Персонализация стоимости</h3>
               <p>
-                Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
+                Мы &nbsp; подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас
                 устраивает.
               </p>
             </li>
@@ -120,13 +120,13 @@
         </div>
       </section>
       <section class="main__about about">
-        <div class="about__container container">
+        <div class="about__container container" data-accordion="parent">
           <picture>
             <source type="image/webp" srcset="./img/2022.webp 1x, ./img/2022@2x.webp 2x">
             <img src="./img/2022.png" srcset="./img/2022@2x.png 2x" width="150" height="320"
               alt="Результат работы за 2022 год.">
           </picture>
-          <div class="about__content">
+          <div class="about__content" data-accordion="element">
             <h2>О компании</h2>
             <p>
               Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с
@@ -142,18 +142,20 @@
                 МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
               </span>
             </p>
-            <p>
-              Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
-              продолжают
-              сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов
-              присутствия.
-            </p>
-            <p>
-              Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
-              Использование
-              инновационных технологий помогает экономить деньги и время наших клиентов.
-            </p>
-            <button class="about__button button" type="button">Подробнее</button>
+            <div class="about__content-hidden" data-accordion="content">
+              <p>
+                Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых
+                продолжают
+                сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов
+                присутствия.
+              </p>
+              <p>
+                Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+                Использование
+                инновационных технологий помогает экономить деньги и время наших клиентов.
+              </p>
+            </div>
+            <button class="about__button button" type="button" data-accordion="button">Подробнее</button>
           </div>
         </div>
       </section>
@@ -183,7 +185,7 @@
             </li>
             <li class="catalog__item card">
               <a class="card__link" href="#">
-                <h3>Монтаж печатных плат</h3>
+                <h3>Монтаж печатных&nbsp;плат</h3>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="./img/card-2-mobile.webp 1x, ./img/card-2-mobile@2x.webp 2x">
@@ -254,7 +256,7 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container container">
+      <div class="footer__container" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
         <a class="footer__logo logo" href="index.html">
           <img class="logo__image" src="img/svg/logo-big.svg" width="215" height="55" alt="" aria-hidden="true">
         </a>
@@ -286,9 +288,12 @@
           </li>
         </ul>
 
-        <section class="footer__menu menu">
+        <section class="footer__menu menu menu--accordion" data-accordion="element">
           <h3>Разделы сайта</h3>
-          <ul class="menu__list clear-list">
+          <button class="menu__button" type="button" data-accordion="button">
+            <span class="visually-hidden">Развернуть/свернуть разделы сайта</span>
+          </button>
+          <ul class="menu__list clear-list" data-accordion="content">
             <li class="menu__item">
               <a class="menu__link" href="#">
                 О компании
@@ -301,7 +306,7 @@
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">
-                Производство печатных плат
+                Производство печатных <br> плат
               </a>
             </li>
             <li class="menu__item">
@@ -327,14 +332,28 @@
           </ul>
         </section>
 
-        <section class="footer__menu menu">
+        <section class="footer__menu menu menu--accordion" data-accordion="element">
           <h3>Наш офис</h3>
-          <address class="menu__address">
-            г. Мытищи, Олимпийский проспект, д.10
-          </address>
-          <a class="menu__tel" href="tel:+74955894050">+7 (495) 589-40-50</a>
-          <a class="menu__tel" href="tel:+74953895829">+7 (925) 389-58-29</a>
-          <a class="menu__tel" href="tel:+74953647813">+7 (925) 364-78-13</a>
+          <button class="menu__button" type="button" data-accordion="button">
+            <span class="visually-hidden">Развернуть/свернуть разделы сайта</span>
+          </button>
+          <ul class="menu__contact-list clear-list" data-accordion="content">
+            <li class="menu__item">
+              <address class="menu__address">
+                г. Мытищи, Олимпийский проспект, д.10
+              </address>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="tel:+74955894050">+7 (925) 389-58-29</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="tel:+74955894050">+7 (925) 364-78-13</a>
+            </li>
+          </ul>
+          </div>
         </section>
       </div>
     </footer>
@@ -344,17 +363,17 @@
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
+      <div class="modal__content" data-form-validate>
         <form class="modal__form form" action="https://echo.htmlacademy.ru" method="POST">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p>Закажите звонок</p>
           <span>Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в удобное время</span>
           <div class="form__area-wrapper">
-            <div class="form__area">
+            <div class="form__area" data-validate-type="text" data-required data-message-base="Поле обязательно к заполнению">
               <input type="text" id="name" name="name" placeholder="Имя" required>
               <label class="visually-hidden" for="name">Имя</label>
             </div>
-            <div class="form__area">
+            <div class="form__area" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
               <input type="tel" id="tel" name="tel" placeholder="Телефон" required>
               <label class="visually-hidden" for="tel">Телефон</label>
             </div>
@@ -363,7 +382,7 @@
               <label class="visually-hidden" for="question">Ваш вопрос</label>
             </div>
             <button class="form__button button" type="submit">Задать вопрос</button>
-            <div class="form__data-area form__data-area--modal">
+            <div class="form__data-area" data-required>
               <input type="checkbox" id="personal-data" name="personal-data" required checked>
               <label for="personal-data">
                 Я согласен на обработку персональных данных
