@@ -161,8 +161,9 @@
       </section>
       <section class="main__catalog catalog">
         <div class="catalog__container container">
-          <h2>
-            Smart Device предлагает следующие товары и услуги
+          <h2 data-catalog-desktop="Smart Device предлагает следующие товары и услуги"
+            data-catalog-mobile="Товары и услуги Smart Device">
+            <span class="visually-hidden">Smart Device предлагает следующие товары и услуги</span>
           </h2>
           <ul class="catalog__list clear-list">
             <li class="catalog__item card">
@@ -257,37 +258,37 @@
     </main>
     <footer class="footer">
       <div class="footer__container" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
-        <a class="footer__logo logo" href="index.html">
-          <img class="logo__image" src="img/svg/logo-big.svg" width="215" height="55" alt="" aria-hidden="true">
-        </a>
-
-        <ul class="footer__social social clear-list">
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#ok" />
-              </svg>
-              <span class="visually-hidden">Мы в Одноклассниках.</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#vk" />
-              </svg>
-              <span class="visually-hidden">Мы в Вконтакте.</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="#">
-              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#pinterest" />
-              </svg>
-              <span class="visually-hidden">Мы в Пинтерест.</span>
-            </a>
-          </li>
-        </ul>
-
+        <div class="footer__icons-wrapper">
+          <a class="footer__logo logo" href="index.html">
+            <img class="logo__image" src="img/svg/logo-big.svg" width="215" height="55" alt="" aria-hidden="true">
+          </a>
+          <ul class="footer__social social clear-list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#ok" />
+                </svg>
+                <span class="visually-hidden">Мы в Одноклассниках.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#vk" />
+                </svg>
+                <span class="visually-hidden">Мы в Вконтакте.</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#pinterest" />
+                </svg>
+                <span class="visually-hidden">Мы в Пинтерест.</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <section class="footer__menu menu menu--accordion" data-accordion="element">
           <h3>Разделы сайта</h3>
           <button class="menu__button" type="button" data-accordion="button">
@@ -332,7 +333,7 @@
           </ul>
         </section>
 
-        <section class="footer__menu menu menu--accordion" data-accordion="element">
+        <section class="footer__contacts menu menu--accordion" data-accordion="element">
           <h3>Наш офис</h3>
           <button class="menu__button" type="button" data-accordion="button">
             <span class="visually-hidden">Развернуть/свернуть разделы сайта</span>

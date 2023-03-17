@@ -1,5 +1,5 @@
 .catalog {
-  padding: 65px 0 140px;
+  padding: 65px 40px 140px;
   background-color: $color-black-pearl;
 
   @include vp-1023 {
@@ -7,7 +7,7 @@
   }
 
   @include vp-767 {
-    padding: 50px 0 86px;
+    padding: 45px 0 86px;
   }
 
   h2 {
@@ -19,15 +19,24 @@
     color: $color-default-white;
     line-height: 51px;
 
+    &::after {
+      content: attr(data-catalog-desktop);
+    }
+
     @include vp-1023 {
       margin: 0 0 32px;
     }
 
     @include vp-767 {
-      margin: 0 0 40px;
+      margin: 0 0 25px;
+      padding-right: 10px;
 
       font-size: 28px;
       line-height: 40px;
+
+      &::after {
+        content: attr(data-catalog-mobile);
+      }
     }
   }
 }
@@ -45,45 +54,5 @@
   @include vp-1023 {
     grid-template-columns: 1fr;
     gap: 30px;
-  }
-}
-
-.catalog__item {
-  &::before {
-    position: absolute;
-    content: "";
-    bottom: 0;
-    right: 0;
-    width: 60px;
-    height: 60px;
-    border-top-left-radius: 3px;
-    z-index: 1;
-
-    background-color: $color-deep-sky-blue;
-
-    @include vp-767 {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  &::after {
-    position: absolute;
-    content: "";
-    bottom: 26px;
-    right: 26px;
-    width: 7px;
-    height: 7px;
-    border-right: 1px solid $color-default-white;
-    border-bottom: 1px solid $color-default-white;
-    transform: rotate(-45deg);
-    z-index: 2;
-
-    @include vp-767 {
-      bottom: 18px;
-      right: 18px;
-      width: 4px;
-      height: 4px;
-    }
   }
 }
