@@ -7,6 +7,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Печатные платы - производство и монтаж, поставка комплектующих, блоков и модулей">
   <title>Smart Device</title>
+
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+
+  <link rel="preload" href="fonts/roboto-condensed-400.woff2" type="woff/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-700.woff2" type="woff/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/pt-mono-400.woff2" type="woff/woff2" as="font" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -48,6 +59,7 @@
     <main class="main">
       <section class="main__intro intro">
         <div class="intro__container">
+          <div class="intro__image-wrapper">
           <picture>
             <source type="image/webp" media="(max-width: 767px)"
               srcset="./img/intro-mobile.webp 1x, ./img/intro-mobile@2x.webp 2x">
@@ -59,6 +71,7 @@
             <img src="./img/intro-desktop.png" srcset="./img/intro-desktop@2x.png 2x" width="1920" height="880"
               alt="Печатная плата.">
           </picture>
+          </div>
           <div class="intro__context">
             <h1>Печатные платы</h1>
             <p>
@@ -124,7 +137,7 @@
           <picture>
             <source type="image/webp" srcset="./img/2022.webp 1x, ./img/2022@2x.webp 2x">
             <img src="./img/2022.png" srcset="./img/2022@2x.png 2x" width="150" height="320"
-              alt="Результат работы за 2022 год.">
+              alt="Наши результаты за 2022 год.">
           </picture>
           <div class="about__content" data-accordion="element">
             <h2>О компании</h2>
@@ -180,7 +193,7 @@
                   <source media="(max-width: 1023px)"
                     srcset="./img/card-1-tablet.png 1x, ./img/card-1-tablet@2x.png 2x">
                   <img src="./img/card-1-desktop.png" srcset="./img/card-1-desktop@2x.png 2x" width="350"
-                    height="650" alt="Печатная плата-1">
+                    height="650" alt="Печатная плата.">
                 </picture>
               </a>
             </li>
@@ -196,13 +209,13 @@
                   <source media="(max-width: 767px)" srcset="./img/card-2-mobile.png 1x, ./img/card-2-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="./img/card-2-tablet.png 1x, ./img/card-2-tablet@2x.png 2x">
                   <img src="./img/card-2-desktop.png" srcset="./img/card-2-desktop@2x.png 2x" width="350" height="650"
-                    alt="Печатная плата-1">
+                    alt="Печатная плата.">
                 </picture>
               </a>
             </li>
             <li class="catalog__item card">
               <a class="card__link" href="#">
-                <h3>Комплектующие для светотехники</h3>
+                <h3>Комплектующие для&nbsp;светотехники</h3>
                 <picture>
                   <source type="image/webp" media="(max-width: 767px)"
                     srcset="./img/card-3-mobile.webp 1x, ./img/card-3-mobile@2x.webp 2x">
@@ -212,7 +225,7 @@
                   <source media="(max-width: 767px)" srcset="./img/card-3-mobile.png 1x, ./img/card-3-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="./img/card-3-tablet.png 1x, ./img/card-3-tablet@2x.png 2x">
                   <img src="./img/card-3-desktop.png" srcset="./img/card-3-desktop@2x.png 2x" width="350" height="650"
-                    alt="Печатная плата-1">
+                    alt="Печатная плата.">
                 </picture>
               </a>
             </li>
@@ -257,10 +270,10 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__container" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
+      <div class="footer__container container" data-accordion="parent" data-destroy="(max-width: 767px)" data-single>
         <div class="footer__icons-wrapper">
           <a class="footer__logo logo" href="index.html">
-            <img class="logo__image" src="img/svg/logo-big.svg" width="215" height="55" alt="" aria-hidden="true">
+            <img class="logo__image" src="img/svg/logo-big.svg" width="215" height="55" alt="Логотип Smart Device." aria-hidden="true">
           </a>
           <ul class="footer__social social clear-list">
             <li class="social__item">
@@ -292,7 +305,7 @@
         <section class="footer__menu menu menu--accordion" data-accordion="element">
           <h3>Разделы сайта</h3>
           <button class="menu__button" type="button" data-accordion="button">
-            <span class="visually-hidden">Развернуть/свернуть разделы сайта</span>
+            <span class="visually-hidden">Открыть/закрыть разделы сайта</span>
           </button>
           <ul class="menu__list clear-list" data-accordion="content">
             <li class="menu__item">
@@ -336,7 +349,7 @@
         <section class="footer__contacts menu menu--accordion" data-accordion="element">
           <h3>Наш офис</h3>
           <button class="menu__button" type="button" data-accordion="button">
-            <span class="visually-hidden">Развернуть/свернуть разделы сайта</span>
+            <span class="visually-hidden">Открыть/закрыть разделы сайта</span>
           </button>
           <ul class="menu__contact-list clear-list" data-accordion="content">
             <li class="menu__item">
@@ -354,7 +367,6 @@
               <a class="menu__link" href="tel:+74955894050">+7 (925) 364-78-13</a>
             </li>
           </ul>
-          </div>
         </section>
       </div>
     </footer>
@@ -371,20 +383,20 @@
           <span>Оставьте контакты, мы&nbsp;проконсультируем вас&nbsp;бесплатно в удобное время</span>
           <div class="form__area-wrapper">
             <div class="form__area" data-validate-type="text" data-required data-message-base="Поле обязательно к заполнению">
-              <input type="text" id="name" name="name" placeholder="Имя" required>
-              <label class="visually-hidden" for="name">Имя</label>
+              <input type="text" id="modal-name" name="modal-name" placeholder="Имя" required>
+              <label class="visually-hidden" for="modal-name">Имя</label>
             </div>
             <div class="form__area" data-validate-type="phone" data-required data-message-base="Поле обязательно к заполнению">
-              <input type="tel" id="tel" name="tel" placeholder="Телефон" required>
-              <label class="visually-hidden" for="tel">Телефон</label>
+              <input type="tel" id="modal-tel" name="modal-tel" placeholder="Телефон" required>
+              <label class="visually-hidden" for="modal-tel">Телефон</label>
             </div>
             <div class="form__area form__area--big">
-              <textarea id="question" name="question" placeholder="Ваш вопрос"></textarea>
-              <label class="visually-hidden" for="question">Ваш вопрос</label>
+              <textarea id="modal-question" name="modal-question" placeholder="Ваш вопрос"></textarea>
+              <label class="visually-hidden" for="modal-question">Ваш вопрос</label>
             </div>
-            <button class="form__button button" type="submit">Задать вопрос</button>
+            <button class="form__button button" type="submit">Отправить</button>
             <div class="form__data-area" data-required>
-              <input type="checkbox" id="personal-data" name="personal-data" required checked>
+              <input type="checkbox" id="modal-personal-data" name="modal-personal-data" required checked>
               <label for="personal-data">
                 Я согласен на обработку персональных данных
               </label>

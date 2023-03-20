@@ -62,22 +62,22 @@
     border: 0;
 
     font-family: $pt-mono;
-    color: $color-default-white;
+    color: $color-eclipse;
     font-size: 16px;
     line-height: 22px;
-    background-color: rgba(4, 24, 39, .15);
+    background-color: rgba(4, 24, 39, 0.15);
 
     @include hover-focus {
       box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
       background-color: rgba(0, 0, 0, 0.2);
-      outline: none;
+
     }
   }
 
   input::placeholder,
   textarea::placeholder {
     font-family: inherit;
-    color: $color-eclipse;
+    color: $color-default-white;
   }
 
   textarea {
@@ -89,15 +89,14 @@
     resize: none;
 
     font-family: $pt-mono;
-    color: $color-default-white;
+    color: $color-eclipse;
     font-size: 16px;
     line-height: 22px;
-    background-color: rgba(4, 24, 39, .15);
+    background-color: rgba(4, 24, 39, 0.15);
 
     @include hover-focus {
       box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
       background-color: rgba(0, 0, 0, 0.2);
-      outline: none;
     }
 
     @include vp-1023 {
@@ -137,7 +136,6 @@
 
     @include hover-focus {
       border-color: $color-black-pearl;
-      outline: none;
     }
   }
 

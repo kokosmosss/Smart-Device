@@ -1,7 +1,7 @@
 .callback {
   padding: 170px 40px 250px;
   background-color: $color-deep-sky-blue;
-  background-image: linear-gradient(139deg, rgba(4, 24, 39, .5) 33.7%, $color-deep-sky-blue 33.7% 100%);
+  background-image: linear-gradient(139deg, rgba(4, 24, 39, 0.5) 33.7%, $color-deep-sky-blue 33.7% 100%);
 
   @include vp-1023 {
     padding: 50px 0 125px;
@@ -15,8 +15,6 @@
 
 .callback__container {
   display: flex;
-  max-width: 1220px;
-  margin: 0 auto;
 
   @include vp-767 {
     justify-content: center;

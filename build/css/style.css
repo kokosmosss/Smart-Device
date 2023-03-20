@@ -629,7 +629,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1220px;
   min-width: 320px;
   margin: 0 auto;
 }
@@ -651,7 +651,6 @@ button,
 
 .button.focus-visible:focus {
   opacity: 0.7;
-  outline: none;
 }
 
 .button.focus-visible:focus:active {
@@ -723,7 +722,8 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
+  min-height: 610px;
   padding: 40px;
   border-radius: 3px;
   background-color: #00b2ff;
@@ -740,6 +740,14 @@ button,
   background: rgba(255, 255, 255, 0);
   border: none;
   cursor: pointer;
+}
+
+.modal__close-btn.focus-visible:focus {
+  opacity: 0.7;
+}
+
+.modal__close-btn.focus-visible:focus:active {
+  opacity: 1;
 }
 
 .modal--responsive .modal__content {
@@ -1348,11 +1356,11 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .contacts__link.focus-visible:focus {
   opacity: 0.7;
-  outline: none;
 }
 
 .contacts__link.focus-visible:focus:active {
@@ -1377,7 +1385,6 @@ button,
 
 .intro {
   position: relative;
-  width: 100%;
   background-color: #041827;
 }
 
@@ -1399,6 +1406,24 @@ button,
   line-height: 35px;
 }
 
+.intro img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.intro__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 880px;
+}
+
 .intro__container {
   margin: 0 auto;
   max-width: 1920px;
@@ -1406,10 +1431,13 @@ button,
 
 .intro__context {
   width: 720px;
-  max-height: 400px;
-  position: absolute;
-  top: 34.5%;
-  left: 24.7%;
+  min-height: 881px;
+  position: relative;
+  padding-top: 302px;
+  margin: 0 auto;
+  -webkit-transform: translateX(-125px);
+  -ms-transform: translateX(-125px);
+  transform: translateX(-125px);
 }
 
 .intro__button {
@@ -1435,6 +1463,8 @@ button,
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 31px 30px;
+  max-width: 1220px;
+  margin: 0 auto;
 }
 
 .features__item {
@@ -1529,11 +1559,6 @@ button,
   content: attr(data-catalog-desktop);
 }
 
-.catalog__container {
-  margin: 0 auto;
-  max-width: 1220px;
-}
-
 .catalog__list {
   display: -ms-grid;
   display: grid;
@@ -1602,12 +1627,12 @@ button,
   display: block;
   padding: 50px 40px;
   height: 100%;
+  cursor: pointer;
 }
 
 .card__link.focus-visible:focus {
   -webkit-box-shadow: 0 0 6px #00b2ff;
   box-shadow: 0 0 6px #00b2ff;
-  outline: none;
 }
 
 .card__link.focus-visible:focus:active {
@@ -1626,8 +1651,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1220px;
-  margin: 0 auto;
 }
 
 .callback__image-wrapper {
@@ -1674,7 +1697,7 @@ button,
   border-radius: 3px;
   border: 0;
   font-family: "PT-Mono", "Times New Roman", serif;
-  color: #ffffff;
+  color: #3e3e3e;
   font-size: 16px;
   line-height: 22px;
   background-color: rgba(4, 24, 39, 0.15);
@@ -1684,37 +1707,36 @@ button,
   -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.2);
-  outline: none;
 }
 
 .form__area input::-webkit-input-placeholder,
 .form__area textarea::-webkit-input-placeholder {
   font-family: inherit;
-  color: #3e3e3e;
+  color: #ffffff;
 }
 
 .form__area input::-moz-placeholder,
 .form__area textarea::-moz-placeholder {
   font-family: inherit;
-  color: #3e3e3e;
+  color: #ffffff;
 }
 
 .form__area input:-ms-input-placeholder,
 .form__area textarea:-ms-input-placeholder {
   font-family: inherit;
-  color: #3e3e3e;
+  color: #ffffff;
 }
 
 .form__area input::-ms-input-placeholder,
 .form__area textarea::-ms-input-placeholder {
   font-family: inherit;
-  color: #3e3e3e;
+  color: #ffffff;
 }
 
 .form__area input::placeholder,
 .form__area textarea::placeholder {
   font-family: inherit;
-  color: #3e3e3e;
+  color: #ffffff;
 }
 
 .form__area textarea {
@@ -1725,7 +1747,7 @@ button,
   border: 0;
   resize: none;
   font-family: "PT-Mono", "Times New Roman", serif;
-  color: #ffffff;
+  color: #3e3e3e;
   font-size: 16px;
   line-height: 22px;
   background-color: rgba(4, 24, 39, 0.15);
@@ -1735,7 +1757,6 @@ button,
   -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(0, 0, 0, 0.2);
-  outline: none;
 }
 
 .form__data-area {
@@ -1764,7 +1785,6 @@ button,
 
 .form__data-area input.focus-visible:focus {
   border-color: #041827;
-  outline: none;
 }
 
 .form__data-area label {
@@ -1822,6 +1842,7 @@ button,
 .menu__link {
   display: block;
   margin-bottom: 10px;
+  cursor: pointer;
   color: rgba(255, 255, 255, 0.7);
   line-height: 22px;
 }
@@ -1829,7 +1850,6 @@ button,
 .menu__link.focus-visible:focus {
   color: #00b2ff;
   opacity: 0.7;
-  outline: none;
 }
 
 .menu__link.focus-visible:focus:active {
@@ -1857,8 +1877,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1220px;
-  margin: 0 auto;
 }
 
 .footer__social {
@@ -1874,9 +1892,12 @@ button,
   margin-right: 20px;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .logo.focus-visible:focus {
   opacity: 0.7;
-  outline: none;
 }
 
 .logo.focus-visible:focus:active {
@@ -1888,14 +1909,10 @@ button,
 }
 
 .main__features {
-  max-width: 1300px;
-  margin: 0 auto;
   margin-bottom: 120px;
 }
 
 .main__about {
-  max-width: 1300px;
-  margin: 0 auto;
   margin-bottom: 100px;
 }
 
@@ -1911,11 +1928,11 @@ button,
 .social__link {
   display: block;
   padding: 10px;
+  cursor: pointer;
 }
 
 .social__link.focus-visible:focus {
   opacity: 0.7;
-  outline: none;
 }
 
 .social__link.focus-visible:focus:active {
@@ -2032,13 +2049,17 @@ button,
   }
 
   .intro img {
+    height: 640px;
     margin-top: -100px;
   }
 
   .intro__context {
     width: 670px;
-    top: 28%;
-    left: 6.5%;
+    min-height: 540px;
+    padding-top: 78px;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   .intro__button {
@@ -2254,13 +2275,13 @@ button,
   }
 
   .intro img {
+    height: 560px;
     margin-top: -70px;
   }
 
   .intro__context {
     width: 270px;
-    top: 27%;
-    left: 8%;
+    min-height: 490px;
   }
 
   .intro__button {
@@ -2292,7 +2313,7 @@ button,
   }
 
   .features__item h3 {
-    margin: 5px 0 9px;
+    margin: 2px 0 9px;
     font-size: 20px;
     line-height: 28px;
   }
@@ -2303,7 +2324,7 @@ button,
   }
 
   .features__item:nth-child(n+3) {
-    padding: 36px 29px 29px;
+    padding: 30px 29px 29px;
   }
 
   .features__item:nth-child(n+3) h3 {
@@ -2496,6 +2517,10 @@ button,
     margin: 0 0 11px;
   }
 
+  .footer__social {
+    width: 100%;
+  }
+
   .footer__icons-wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -2520,6 +2545,12 @@ button,
 
   .main__features {
     margin-bottom: 34px;
+  }
+
+  .social {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -2589,10 +2620,17 @@ button,
 @media (hover: hover) {
   .button:hover:not(.focus-visible) {
     opacity: 0.7;
-    outline: none;
   }
 
   .button:hover:not(.focus-visible):active {
+    opacity: 1;
+  }
+
+  .modal__close-btn:hover:not(.focus-visible) {
+    opacity: 0.7;
+  }
+
+  .modal__close-btn:hover:not(.focus-visible):active {
     opacity: 1;
   }
 
@@ -2606,7 +2644,6 @@ button,
 
   .contacts__link:hover:not(.focus-visible) {
     opacity: 0.7;
-    outline: none;
   }
 
   .contacts__link:hover:not(.focus-visible):active {
@@ -2616,7 +2653,6 @@ button,
   .card__link:hover:not(.focus-visible) {
     -webkit-box-shadow: 0 0 6px #00b2ff;
     box-shadow: 0 0 6px #00b2ff;
-    outline: none;
   }
 
   .card__link:hover:not(.focus-visible):active {
@@ -2628,25 +2664,21 @@ button,
     -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.2);
-    outline: none;
   }
 
   .form__area textarea:hover:not(.focus-visible) {
     -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
     box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: rgba(0, 0, 0, 0.2);
-    outline: none;
   }
 
   .form__data-area input:hover:not(.focus-visible) {
     border-color: #041827;
-    outline: none;
   }
 
   .menu__link:hover:not(.focus-visible) {
     color: #00b2ff;
     opacity: 0.7;
-    outline: none;
   }
 
   .menu__link:hover:not(.focus-visible):active {
@@ -2655,7 +2687,6 @@ button,
 
   .logo:hover:not(.focus-visible) {
     opacity: 0.7;
-    outline: none;
   }
 
   .logo:hover:not(.focus-visible):active {
@@ -2664,7 +2695,6 @@ button,
 
   .social__link:hover:not(.focus-visible) {
     opacity: 0.7;
-    outline: none;
   }
 
   .social__link:hover:not(.focus-visible):active {

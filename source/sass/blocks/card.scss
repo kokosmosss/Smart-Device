@@ -77,10 +77,10 @@
   display: block;
   padding: 50px 40px;
   height: 100%;
+  cursor: pointer;
 
   @include hover-focus {
     box-shadow: 0 0 6px $color-deep-sky-blue;
-    outline: none;
 
     &:active {
       box-shadow: 0 0 6px $color-default-white;
