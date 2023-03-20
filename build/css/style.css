@@ -2188,7 +2188,7 @@ button,
   }
 
   .footer__social {
-    margin: 0;
+    margin: 0 -9px 0 0;
   }
 
   .footer__icons-wrapper {
@@ -2309,11 +2309,11 @@ button,
   .features__item {
     min-width: 270px;
     min-height: 335px;
-    padding: 33px 29px 35px;
+    padding: 30px 30px 35px;
   }
 
   .features__item h3 {
-    margin: 2px 0 9px;
+    margin: 9px 0;
     font-size: 20px;
     line-height: 28px;
   }
@@ -2323,12 +2323,9 @@ button,
     line-height: 18.9px;
   }
 
-  .features__item:nth-child(n+3) {
-    padding: 30px 29px 29px;
-  }
-
-  .features__item:nth-child(n+3) h3 {
-    margin: 7px 0 12px;
+  .features__item svg {
+    width: 30px;
+    height: 30px;
   }
 
   .about h2 {
