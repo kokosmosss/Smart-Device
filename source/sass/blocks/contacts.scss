@@ -37,10 +37,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  min-width: 455px;
 
   @include vp-1023 {
-    // max-width: 100px;
     min-width: auto;
     gap: 20px;
   }

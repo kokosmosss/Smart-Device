@@ -37,7 +37,14 @@
 }
 
 .header__logo {
-  margin-right: 160px;
+  margin-right: 80px;
+  width: 297px;
+  min-width: 215px;
+
+  @include vp-1023 {
+    width: auto;
+    min-width: auto;
+  }
 
   @include vp-767 {
     margin-right: 0;
@@ -51,11 +58,14 @@
   }
 }
 
-
 .header__contacts {
   margin: 0 170px 0 0;
+  width: 455px;
+  min-width: 386px;
 
   @include vp-1023 {
+    width: auto;
+    min-width: auto;
     margin: 0 20px 0 auto;
   }
 

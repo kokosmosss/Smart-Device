@@ -67,7 +67,13 @@
     line-height: 22px;
     background-color: rgba(4, 24, 39, 0.15);
 
-    @include hover-focus {
+    @include hover {
+      box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @include focus {
+      outline: none;
       box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
       background-color: rgba(0, 0, 0, 0.2);
     }
@@ -93,7 +99,13 @@
     line-height: 22px;
     background-color: rgba(4, 24, 39, 0.15);
 
-    @include hover-focus {
+    @include hover {
+      box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @include focus {
+      outline: none;
       box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.2);
       background-color: rgba(0, 0, 0, 0.2);
     }
