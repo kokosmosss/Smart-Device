@@ -22,8 +22,9 @@
 }
 
 .callback__image-wrapper {
-  width: 50%;
   padding-top: 78px;
+  max-width: 510px;
+  flex-shrink: 1;
 
   @include vp-1023 {
     display: none;
@@ -31,8 +32,8 @@
 }
 
 .callback__form {
-  margin-left: 40px;
-  width: 50%;
+  margin-left: 119px;
+  max-width: 585px;
 
   @include vp-1023 {
     width: 100%;

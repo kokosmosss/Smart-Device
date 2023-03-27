@@ -24,8 +24,27 @@
     padding: 0 25px;
     position: relative;
 
-    border-bottom: 1px solid $color-alice-blue;
     border-top: 1px solid $color-alice-blue;
+  }
+
+  &:not(:first-of-type) {
+    @include vp-767 {
+      border-bottom: 1px solid $color-alice-blue;
+    }
+  }
+
+  [data-accordion="content"] {
+    overflow: visible;
+
+    @include vp-767 {
+      overflow: hidden;
+    }
+  }
+}
+
+.menu__item {
+  @include vp-767 {
+    padding: 3px;
   }
 }
 
@@ -51,11 +70,19 @@
   @include vp-767 {
     margin-bottom: 10px;
   }
+
+  @media (min-width: 768px) {
+    max-height: 100%;
+  }
 }
 
 .menu__contact-list {
   @include vp-767 {
     margin-bottom: 10px;
+  }
+
+  @media (min-width: 768px) {
+    max-height: 100%;
   }
 }
 

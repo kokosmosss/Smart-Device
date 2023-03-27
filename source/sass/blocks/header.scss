@@ -18,6 +18,7 @@
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   max-width: 1220px;
 
   @include vp-1023 {
@@ -25,9 +26,23 @@
   }
 }
 
+.header__button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 330px;
+
+  @include vp-1023 {
+    display: none;
+  }
+}
+
 .header__button {
+  min-width: 160px;
+  margin-right: 61px;
   padding: 10px 17px 13px;
   border: 1px solid $color-alice-blue;
+
   color: $color-alice-blue;
   background-color: transparent;
 
@@ -37,17 +52,11 @@
 }
 
 .header__logo {
-  margin-right: 80px;
-  width: 297px;
-  min-width: 215px;
-
-  @include vp-1023 {
-    width: auto;
-    min-width: auto;
-  }
+  width: 215px;
+  flex-shrink: 0;
 
   @include vp-767 {
-    margin-right: 0;
+    width: 35px;
   }
 
   img {
@@ -55,21 +64,5 @@
       width: 35px;
       height: 35px;
     }
-  }
-}
-
-.header__contacts {
-  margin: 0 170px 0 0;
-  width: 455px;
-  min-width: 386px;
-
-  @include vp-1023 {
-    width: auto;
-    min-width: auto;
-    margin: 0 20px 0 auto;
-  }
-
-  @include vp-767 {
-    margin: 0 10px 0 auto;
   }
 }
