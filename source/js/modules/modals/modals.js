@@ -92,6 +92,9 @@ export class Modals {
     if (isEscKey) {
       evt.preventDefault();
       this.close(document.querySelector('.modal.is-active').dataset.modal);
+      this._modalOpenElements.forEach((element) => {
+        element.blur();
+      });
     }
   }
 
@@ -103,6 +106,9 @@ export class Modals {
     }
 
     this.close(target.closest('[data-modal]').dataset.modal);
+    this._modalOpenElements.forEach((element) => {
+      element.blur();
+    });
   }
 
   _addListeners(modal) {

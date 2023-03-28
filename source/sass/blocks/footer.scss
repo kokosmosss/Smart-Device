@@ -13,6 +13,7 @@
 
 .footer__container {
   display: flex;
+  overflow: hidden;
 
   @include vp-1023 {
     flex-wrap: wrap;
@@ -20,7 +21,6 @@
   }
 
   @include vp-767 {
-    overflow: hidden;
     padding: 0;
   }
 }
